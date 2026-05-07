@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>音乐在线播放器 - 罗杰阳</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 顶部信息栏 -->
+  <div class="top-bar">
+    学号：24215220211 | 姓名：罗杰阳 | 班级：网工2班
+  </div>
+
+  <div class="player-container">
+    <!-- 封面区域 -->
+    <div class="cover-area">
+      <img src="images/record0.jpg" class="cover" id="disc">
+    </div>
+
+    <!-- 歌曲信息 -->
+    <div class="info-area">
+      <h2 id="song-name">music0</h2>
+      <p id="singer">在线音乐播放器</p>
+    </div>
+
+    <!-- 进度条 -->
+    <div class="progress-area">
+      <span id="current-time">00:00</span>
+      <div class="progress-bar" id="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+      <span id="duration">00:00</span>
+    </div>
+
+    <!-- 控制按钮 -->
+    <div class="control-area">
+      <button id="prev"><img src="images/上一首.png"></button>
+      <button id="play-toggle"><img src="images/继续播放.png" id="play-icon"></button>
+      <button id="next"><img src="images/下一首.png"></button>
+      <button id="playlist-btn"><img src="images/列表.png"></button>
+    </div>
+
+    <!-- 播放列表 -->
+    <div class="playlist" id="playlist">
+      <ul>
+        <li class="active" data-index="0">music0.mp3</li>
+        <li data-index="1">music1.mp3</li>
+        <li data-index="2">music2.mp3</li>
+        <li data-index="3">music3.mp3</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 音频元素 -->
+  <audio id="audio" src="music/music0.mp3">
+  <script src="js/main.js"></script>
+</body>
+</html>
